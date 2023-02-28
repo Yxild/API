@@ -20,7 +20,7 @@ app.get("/api/" + APIVersion + "/script", function (req, res) {
     res.send("loadstring(game:HttpGet('https://raw.githubusercontent.com/Yxild/ass-hub/main/script.lua'), 1)()");
 })
 
-app.get("/api/" + APIVersion + "/information", function (req, res) {
+app.post("/api/" + APIVersion + "/information", function (req, res) {
     var info = req.headers.information
 
     if (info == "Version") {
