@@ -1,7 +1,7 @@
 const express = require("express"),
     fs = require("fs");
 
-let RawJSON = fs.readFileSync("./information.json");
+let RawJSON = fs.readFileSync("information.json");
 let ParsedJSON = JSON.parse(RawJSON);
 
 const app = express()
